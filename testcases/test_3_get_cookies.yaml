@@ -1,0 +1,11 @@
+title: 获取cookies
+
+request:
+  method: get
+  # url_unquote 是函数
+  # referer 是 变量
+  url: ${url_unquote(referer)}  # 使用函数对变量进行二次处理
+
+extract:
+
+validate:

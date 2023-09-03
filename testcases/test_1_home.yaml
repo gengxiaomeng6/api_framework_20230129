@@ -1,0 +1,14 @@
+title: 获取csrf
+
+request:
+  method: get
+  url: http://47.107.116.139/phpwind/
+  
+  
+extract: # 提取
+  token: [cookies, $.csrf_token, 0] # 从cookies使用jsonptah 提取第一个数据
+  
+  
+validate:
+  codes: 200
+  
